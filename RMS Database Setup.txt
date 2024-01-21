@@ -1,0 +1,25 @@
+-- Creating database
+create database restaurant;
+
+-- Selecting the database
+use restaurant;
+
+-- Creating food table
+create table food (
+  id int primary key,
+  food_name varchar(25) not null,
+  price int not null,
+  quantity int 
+);
+
+-- Create admin table
+create table admin (
+login_id varchar(25),
+password varchar(25)
+);
+
+-- Inserting value in admin table
+insert into admin values
+("admin","admin")
+
+Set databse port 3307 which is 3306 by default and replace password in dbconnection code.
